@@ -2,7 +2,6 @@ package com.company;
 
 import java.util.ArrayList;
 
-import static com.company.Main.printGameStatus;
 
 public class Main {
 

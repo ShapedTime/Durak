@@ -122,6 +122,8 @@ public class Game {
 
         int numberOfElements = 6;
 
+
+        //HAND1
         for (int i = 0; i < numberOfElements; i++) {
             int randomIndex = rnd.nextInt(deck.size());
             Card randomElement = deck.get(randomIndex);
@@ -129,6 +131,8 @@ public class Game {
             deck.remove(randomIndex);
         }
 
+
+        //HAND2
         for (int n = 0; n < numberOfElements; n++) {
             int rndmIndex = rnd.nextInt(deck.size());
             Card rndmElement = deck.get(rndmIndex);
@@ -136,6 +140,8 @@ public class Game {
             deck.remove(rndmIndex);
         }
 
+
+        //TRUMP
         trump = deck.get(rnd.nextInt(deck.size()));
         ArrayList<Card> trumpArray = new ArrayList<Card>();
         trumpArray.add(trump);
@@ -154,6 +160,8 @@ public class Game {
         int ir = 0;
         int ib = 0;
         boolean tflag = false;
+
+        //HAND1
         for (Card card: hand1
              ) {
                if(card.getType()==trump.getType()){
@@ -177,6 +185,8 @@ public class Game {
         it=0;
         ir=0;
         ib=0;
+
+        //HAND2
         for (Card card: hand2
                 ) {
             if(card.getType()==trump.getType()){
