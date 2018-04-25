@@ -1,2 +1,2 @@
 # Durak
-An Durak structures with Java
+A Durak AI
